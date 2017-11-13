@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>购物车</title>
+ </head>
+ <body>
+
+  <style>
+	body{
+		margin:0px;
+	}
+	.d{
+		border:0px solid;
+		width:1350px;
+		height:auto;
+		text-align:left;
+	
+	}
+	.d1{
+		border:2px #F7F7F7 solid;
+		position:relative;
+		margin:0px auto;
+		width:900px;
+		height:900px;
+		overflow:hidden;
+
+	}
+	@keyframes anima{
+		0%{background:#281C62;}
+		50%{background:#17A05D}
+		100%{background:pink;}
+	}
+	.anima1{
+		border:0px solid;
+		position:absolute;
+		top:0px;
+
+	}
+	.anima2{
+		border:0px solid;
+		position:absolute;
+		top:0px;
+		right:0px;
+	}
+	.anima1,.anima2{
+		background:pink;
+		animation:anima 6s infinite;
+		width:220px;
+		height:900px;
+	}
+
+	.d3{
+		width:274px;
+		height:112px;
+		float:left;
+		margin-top:1px;
+	}
+	.d5,.d6,.d7{
+		width:100px;
+		height:28px;
+		float:right;
+		font-size:8px;
+		position:relative;
+		bottom:0px;
+	}
+	.s1{
+		position:relative;
+		bottom:10px;
+		text-decoration:none;
+		color:black;
+	}
+	.d9{
+		position:relative;
+		right:275px;
+		width:14.3%;
+	}
+	
+	.d11{
+		position:relative;
+		right:275px;
+		width:14.3%;
+	}
+
+	.d12{
+		position:relative;
+		right:275px;
+		width:14.3%;
+	}
+	.d13{
+		position:relative;
+		bottom:59px;
+		right:0px;
+		width:14.3%;
+	}
+	.d14{
+		position:relative;
+		bottom:59px;;
+		right:0px;
+		width:14.3%;
+	}
+	.d15{
+		position:relative;
+		width:14.3%;
+		bottom:59px;
+		right:0px;
+	}
+
+.d16{
+		position:relative;
+		bottom:59px;
+		left:5px;
+		width:80px;
+	}
+
+	.d9,.d11,.d12,.d13,.d14,.d15,.d16{
+		border-top:0px solid;
+		border-left:0px solid;
+		border-bottom:0px solid;
+		border-right:1px #FFFFFF solid;
+		float:left;
+		height:57px;
+		font-size:8px;
+		text-align:center;
+	}
+	.d10{
+		border:0px solid;
+		width:630px;
+		height:57px;
+		margin:0;
+		padding:0px;
+		position:relative;
+		top:53.3px;
+		left:267px;
+		background:url(images/shop_07.gif);
+	}
+	.lian1{
+		text-decoration:none;
+		color:black;
+	}
+	.a1{
+		width:897px;
+		height:33px;
+		padding:0px;
+		background:url(images/shop_13.gif);
+		margin-top:51px;
+	}
+    .a2{
+		color:#FFF;
+		margin:0px;
+		width:400px;
+		float:right;
+	}
+	.a3{
+		float:left;
+		height:83px;
+		position:relative;
+		bottom:30px;
+	}
+	.a5{
+		width:623px;
+		height:50px;
+		float:right;
+		background:url(images/shop_16.gif);
+		margin-top:-1px;
+		margin-right:3px;
+	}
+	.a6{
+		float:left;
+		width:181px;
+		height:120px;
+		background:url(images/shop_17.gif);	
+		position:absolute;
+		top:180px;
+		
+		margin:0px;
+	}
+	
+	.a8{
+		display:inline-block;
+		height:60px;
+		width:120px;
+		position:absolute;
+		top:186px;
+		right:3px;
+		z-index:2;
+	}	
+	.b7{
+		border:0px solid;;
+		width:600px;
+		height:100px;
+		position:absolute;
+		top:780px;
+		left:160px;
+		text-align:center;
+		margin:0px auto;
+	}
+	.b8{
+		width:680px;
+		height:485px;
+		position:absolute;
+		bottom:135px;
+		left:200px;
+		border:0px solid;
+		vertical-align:middle;
+	}
+	
+
+	.b9{
+		border:0px solid;
+		position:absolute;
+		top:190px;
+		left:181px;
+		width:608px;
+		height:80px;
+	}
+	.c1{
+		width:520px;
+		height:145px;
+		border:0px solid;
+		position:relative;
+	}
+
+	.c2{
+		width:520px;
+		height:145px;
+		border:0px solid;
+		position:relative;
+		top:-100px;
+	}
+
+	.c11{
+		width:260px;
+		height:120px;
+		border:0px solid;
+		position:relative;
+		top:-140px;
+		left:180px;
+		border-bottom:1px #666666 solid;
+		border-style:dotted;
+	}
+	.c21{
+		width:260px;
+		height:120px;
+		border:0px solid;
+		position:relative;
+		top:-240px;
+		left:180px;
+		border-bottom:1px #666666 solid;
+		border-style:dotted;
+	}
+
+
+	#jd{
+		display:none;
+	}
+	ul{	
+		margin:0px;
+		padding:0px;
+		line-height:30px;
+		list-style-image:url(images/2_clos.gif);
+
+	}
+	#jd li{	
+			
+			list-style-type:none;
+
+	}
+	.example:hover #jd{
+		position:relative;
+		left:10px;
+		display:block;
+		width:80px;
+		height:50px;
+		z-index:100;
+		overflow:auto;
+		scrollBar-face-color:green;
+	}
+
+	.f1{
+		font-size:12px;
+		margin-left:20px;
+	}
+	.s3{
+		border:1px #666666 solid;
+		border-style:dashed;
+		border-left:none;
+		border-right:none;
+		width:165px;
+		font-size:13px;
+		display:block;
+		position:relative;
+		left:5px;
+		top:130px;
+		margin:0px;
+		padding:8px;
+	}
+	.s2{
+		border:1px #666666 solid;
+		border-style:dashed;
+		border-left:none;
+		border-right:none;
+		width:165px;
+		font-size:13px;
+		display:block;
+		position:relative;
+		left:5px;
+		top:172px;
+		margin:0px;
+		padding:5px;
+	}
+	
+  </style>
+ </head>
+ <body>
+ <div class="d">
+	<div class="d1">
+	
+		<div class="d2">
+		<div class="d3"><img src="images/shop_02.gif"/></div>
+	
+			<div class="d4">
+			
+			<div class="d5"><img src="images/T_home.gif"/><a href="" class="s1">设为首页</a></div>
+			<div class="d6"><img src="images/T_favorite.gif"/><a href class="s1">收藏本站</a></div>
+			<div class="d7"><img src="images/T_contact.gif"/><a href="" class="s1">联系我们</a></div>
+			</div>
+				<div class="d10">
+					<div class="d9"><a class="lian1" href="index.html"><p>首页<br>Index</p></a></div>
+					<div class="d11"><a class="lian1" href="新品上架.html"><p>新品上架<br>NewGoods</p></a></div>
+					<div class="d12"><a class="lian1" href="特价商品.html"><p>特价商品<br>at a sale</p></a></div>
+					<div class="d13"><a class="lian1" href="会员资料修改.html"><p>会员资料修改<br>Member</p></a></div>
+					<div class="d14"><a class="lian1" href="购物车.html"><p>购物车<br>Cart</p></a></div>
+					<div class="d15"><a class="lian1" href="查看订单.html"><p>查看订单<br>Order</p></a></div>
+					<div class="d16"><a class="lian1" href="销售排行.html"><p>销售排行<br>SellSort</p></a></div>
+				</div>
+		<div class="a1">
+			<div class="a2">
+				Mary欢迎您！（如果您不是Mary,<a href="" style="text-decoration:none;color:red;font-size:10px;">请点击这里退出登录</a>）
+			</div>
+		</div>
+		<div class="a3"><img src="images/shop_11(2).png"></div>
+		
+		<div class="a4" style="margin-top:-1px; float:left"><img src="images/shop_15.gif"> </div>
+			<div class="a5"><font style="font-size:20px;position:relative;top:2px;">请输入查询条件:</font>
+		<select style="margin-left:20px;height:22px;">
+		<option>全部分类</option>
+		</select>
+		<input type="text" style="width:250px;margin-left:30px;"/>
+		<input type="button" value="搜索" style="margin-left:20px;">
+			</div>	
+			
+		</div>
+		<div class="a6"><form class="f1">会员名<br><input type="text" style="width:100px;"><br>
+		密&nbsp;&nbsp;&nbsp;码<br><input type="text" style="width:100px;"></form>
+		<input style="height:20px;width:35px;text-align:center;line-height:20px;height:20px; margin:0px; padding:0px;position:relative;left:20px;top:2px;" type="submit" value="注册"> <input style="height:20px;width:35px;text-align:center;line-height:20px;height:20px; margin:0px; padding:0px;position:relative;left:45px;top:2px;" type="submit" value="登录"> <input style="height:20px;width:35px;text-align:center;line-height:20px;height:20px; margin:0px; padding:0px;position:relative;left:50px;top:2px;" type="submit" value="重置">
+		</div>
+		
+		
+	
+		<div class="a8"><img src="images/shop_18(2).png"/></div>
+
+		<div style="float:left;position:absolute;top:300px;"><img src="images/shop_22.gif"/></div>
+		<div style="width:190px position:relative; ">
+			<span class="s3"style="border-top:none;">圣诞购物有奖活动!</span>
+			<span class="s3" style="border-top:0px;">机会不容错过，赶快行动吧!</span>
+			<span class="s3" style="border:0px;">人生感悟</span>
+			<span class="s3">全场六折</span>
+		</div>
+
+		
+	
+	
+
+		<div style="float:left;position:absolute;top:482px;left:3px;"><img src="images/shop_33.gif"/></div>
+		<div style="width:190px ">
+			<span class="s2 ">新新人类电视</span>
+			<span class="s2" style="border-top:0px; ">三星彩电</span>
+			<span class="s2" style="border:0px;">明可数码相机</span>
+			<span class="s2">52/38度四特酒</span>
+			<span class="s2" style="border:0px;">索肤特洗面奶</span>
+			<span class="s2" >海尔节能冰箱</span>
+			<span class="s2" style="border:0px;">小天使电视</span>
+			<span class="s2" >百里香蛋卷</span>
+		</div>
+		
+	
+
+		<div class="b7">
+		<br>
+		奋斗商城客户服务热线：0791-3881060,3881061 传真：0791-3881063
+		CopyRtight &copy;2009 www.fendoujiaoyu.com0奋斗教育 
+		本站请使用IE6.0或以上版本 1024*768为最佳显示效果
+		</div> 
+		<div style="width:831px;height:7px;margin:0px;padding:0px;position:absolute;bottom:10px;left:35px;">
+			<img src="images/shop_01.gif" style="position:relative;"/>
+		</div>
+
+		<div class="b8">
+		<br/>
+		<table border=0px align="center" width=680px>
+			<tr align="center" >
+				<th>编号</th>
+				<th>商品名称</th>
+				<th>市场价</th>
+				<th>商城价</th>
+				<th>折扣</th>
+				<th>数量</th>
+				<th>返回</th>
+			</tr>
+
+			<tr align="center">
+				<td>1</td>
+				<td>新新人类电视</td>
+				<td style="text-decoration:line-through">￥3500.0</td>
+				<td style="color:red">￥2900.0</td>
+				<td>13.8%</td>
+				<td><input type="text" style="width:50px"/></td>
+				<td><img src="images/del.gif"></td>
+			</tr>
+
+			<tr align="center">
+				<td colspan="2" align="center">总计</td>
+				<td style="text-decoration:line-through">￥3500.0</td>
+				<td style="color:red">￥2900.0</td>
+				<td colspan="3" align="center"><button>更新数量</button></td>
+			</tr>
+		</table>
+		<br/><br/>
+		<p align="center"><a href="" style="text-decoration:none;color:#666">继续购物</a>|<a href="" style="text-decoration:none;color:#666">去收银台结账</a>|<a href="" style="text-decoration:none;color:#666">清空购物车</a></p>
+		</div>
+
+		<div class="b9"><img src="images/center_cart.gif"/></div>
+	</div>
+
+	<div class="anima1" ></div>
+
+	<div class="anima2" ></div>
+</div>
+ </body>
+</html>
+
+ </body>
+</html>

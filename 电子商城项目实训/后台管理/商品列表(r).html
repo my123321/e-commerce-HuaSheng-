@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title> 商品列表(r) </title>
+  <meta name="generator" content="editplus" />
+  <meta name="author" content="" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+ </head>
+<style>
+	*{
+		margin:0px;
+		padding:0px;
+	}
+	#tittle{
+		width:595px;
+		position:absolute;
+		top:0px;
+		z-index:-999;
+	}
+	.wrap{
+		width:595px;
+	}
+	#page{
+		position:relative;
+		top:50px;
+		left:260px;
+	}
+	.Apage{
+		text-decoration:none;
+		font-size:8px;
+		color:#666;
+	}
+	table{
+		border:1px #FFF solid;
+		position:relative;
+		left:10px;
+	}
+	#search{
+		position:absolute;
+		left:30px;
+		top:0px;
+		padding-top:5px;
+		width:560px;
+		
+	}
+	span{
+		float:right;
+		font-size:8px;
+		padding-top:5px;
+		color:#666;
+	}
+	.goods{
+		text-decoration:none;
+		color:#666;
+	}
+	.goods:hover{
+		color:red;
+	}
+</style>
+ <body>
+<div class="wrap">
+	<div id="tittle"><img src="images/manage_03.gif"><br/>
+	<p id="search">商品类别: <select><option>全部分类</option></select> <select></select> <input type="text"/> 搜索 <span>[<img src="images/list.gif">添加商品信息]</span></p>
+	<table width="560px">
+		<tr align="center" bgcolor="#CCC">
+			<th>编<br/>号</th>
+			<th>商品名称</th>
+			<th>所属类型</th>
+			<th>价格</th>
+			<th>商品数量</th>
+			<th>订购数量</th>
+			<th>特<br/>价</th>
+			<th>补<br/>货</th>
+			<th>修<br/>改</th>
+			<th>失<br/>效</th>
+		</tr>
+
+		<tr align="center">
+			<td>1.</td>
+			<td><a class="goods" href="i商品详细信息.html" target="_top">可达电视</a></td>
+			<td>电视</td>
+			<td>￥2650</td>
+			<td>250（台）</td>
+			<td>100（台）</td>
+			<td>否</td>
+			<td><a href="i商品信息添加.html" target="_top"><img src="images/add.gif"/></a></td>
+			<td><a href="i商品信息修改.html" target="_top"><img src="images/modify.gif"/></a></td>
+			<td><img src="images/del.gif"/></td>
+		</tr>
+
+		<tr align="center">
+			<td>2.</td>
+			<td><a class="goods" href="i商品详细信息.html" target="_top">同创电视</a></td>
+			<td>电视</td>
+			<td>￥2350</td>
+			<td>100（台）</td>
+			<td>30（台）</td>
+			<td>是</td>
+			<td><a href="i商品信息添加.html" target="_top"><img src="images/add.gif"/></a></td>
+			<td><a href="i商品信息修改.html" target="_top"><img src="images/modify.gif"/></a></td>
+			<td><img src="images/del.gif"/></td>
+		</tr>
+	</table>
+	<div id="page">当前页数：[1/1] <a class="Apage" href="">第一页</a> <a class="Apage" href="">上一页</a> <a class="Apage" href="">下一页</a> <a class="Apage" href="">最后一页</a> </div>
+</div>
+ </body>
+</html>

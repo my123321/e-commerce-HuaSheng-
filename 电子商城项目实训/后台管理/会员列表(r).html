@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title> 会员列表(r) </title>
+  <meta name="generator" content="editplus" />
+  <meta name="author" content="" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+ </head>
+<style>
+	*{
+		margin:0px;
+		padding:0px;
+	}
+	#tittle{
+		width:595px;
+		position:absolute;
+		top:0px;
+		z-index:-999;
+	}
+	.wrap{
+		width:595px;
+	}
+	#page{
+		position:relative;
+		top:50px;
+		left:260px;
+	}
+	.Apage{
+		text-decoration:none;
+		font-size:8px;
+		color:#666;
+	}
+	table{
+		border:1px #FFF solid;
+		position:relative;
+		left:10px;
+	}
+	#search{
+		position:absolute;
+		left:30px;
+		top:0px;
+		padding-top:5px;
+		width:560px;
+		
+	}
+	.member{
+		text-decoration:none;
+		color:#666;
+		font-size:12px;
+	}
+	.member:hover{
+		color:red;
+	}
+</style>
+ <body>
+<div class="wrap">
+	<div id="tittle"><img src="images/manage_center_memberlist.gif"><br/>
+	<p id="search"> 会员编号: <input type="text"/> 会员名： <input type="text"/> <input type="button" value="搜索"/></p>
+	<table width="560px">
+		<tr align="center" bgcolor="#CCC">
+			<th>编<br/>号</th>
+			<th>用户名</th>
+			<th>真实姓名</th>
+			<th>E-mail</th>
+			<th>消费额</th>
+			<th>会员等级</th>
+			<th>创建时间</th>
+			<th>冻<br/>结</th>
+		</tr>
+
+		<tr align="center">
+			<td>1.</td>
+			<td><a class="member" href="i会员详细信息.html" target="_top">mary</a></td>
+			<td>mary</td>
+			<td>mary@sohu.com</td>
+			<td>￥1000.0</td>
+			<td>VIP</td>
+			<td>2008-11-13<br/>13:34:16</td>
+			<td><img src="images/freeze.gif"/></td>
+		</tr>
+
+		<tr align="center">
+			<td>2.</td>
+			<td><a class="member" href="i会员详细信息.html" target="_top">Lily</a></td>
+			<td>Lliy</td>
+			<td>mary@sohu.com</td>
+			<td>￥200.0</td>
+			<td>普通会员</td>
+			<td>2008-11-13<br/>13:34:16</td>
+			<td><img src="images/thaw.gif"/></td>
+		</tr>
+	</table>
+	<div id="page">当前页数：[1/1] <a class="Apage" href="">第一页</a> <a class="Apage" href="">上一页</a> <a class="Apage" href="">下一页</a> <a class="Apage" href="">最后一页</a> </div>
+</div>
+ </body>
+</html>
